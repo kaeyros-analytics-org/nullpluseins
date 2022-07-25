@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="logo" routerLink="/">
+    <img src="./assets/0+1_Logo.svg" alt="logo of festival" class="pictures"/>
+  </div>
+
+  <div class="header-line-2">
+    <div class="header-slogan" routerLink="/">
+      <span class="header-slogan-title">Festival für Diversität <i>+</i> Komplexität</span>
+      <span>5 - 29  Oktober 2021</span>
+    </div>
+
+
+
+    <div class="header-menu">
+      <a *ngFor="let menu of menus" class="header-menu-item" routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}" [routerLink]="menu.link">{{menu.label}}</a>
+    </div>
+
+    <div class="dropdown-toggle">
+      <app-dropdown-menu [menuItems]="menus"></app-dropdown-menu>
+    </div>
+  </div>
+  <app-circle ></app-circle>
+  <app-rectangle></app-rectangle>
+</div>
+
+
+

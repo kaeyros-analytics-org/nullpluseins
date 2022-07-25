@@ -1,0 +1,254 @@
+@import "src/styles";
+.detail-program {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 980px;
+
+  @include tablet() {
+    width: 100%;
+  }
+  @include phone() {
+    width: 100%;
+  }
+
+}
+
+.description-more-information {
+  font-size: 25px;
+  line-height: 35px;
+  opacity: 0.7;
+
+  @include tablet() {
+    width: 100%;
+  }
+
+  @include phone() {
+    width: 100%;
+  }
+}
+
+.program-circle {
+  width: 166px;
+  height: 166px;
+  position: absolute;
+  top: 316px;
+  left: -49px;
+}
+
+.spacer {
+  padding-top: 10px;
+}
+
+.program-circle2 {
+  left: 30%;
+  width: 120px !important;
+  height: 120px !important;
+  position: absolute;
+  top: 3%;
+  @include desktop(){
+    left: 23%;
+    width: 80px !important;
+    height: 80px !important;
+    position: absolute;
+    top: 3%;
+  }
+}
+
+.program-rectangle {
+  position: absolute;
+  background-color: #DD0B3B !important;
+  height: 240px;
+  width: 277px;
+  left: 73%;
+  top: 9.5%;
+}
+
+.color-white {
+  color: white;
+}
+
+.program-blue-rectangle {
+  background-color: #18518D !important;
+  position: absolute;
+  height: 259px !important;
+  width: 62px !important;
+  left: 50%;
+  top: 10%;
+}
+
+.program-pink-rectangle {
+  position: absolute;
+  height: 259px !important;
+  width: 140px !important;
+  left: 50%;
+  top: -9%;
+}
+
+.sub-title {
+  max-width: 660px;
+}
+
+.category-link {
+  text-decoration: none;
+  border-Bottom: 1px solid #fff
+}
+
+.title-program {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & .title {
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+.image-program {
+  width: 660px;
+  height: auto;
+  @include tablet() {
+    width: 100%;
+  }
+  @include phone() {
+    width: 100%;
+  }
+}
+
+.description-program {
+  width: 660px;
+  height: auto;
+  padding-bottom: 100px;
+
+  @include tablet() {
+    width: 100%;
+  }
+  @include phone() {
+    width: 100%;
+  }
+
+  & p {
+    text-align: left;
+  }
+}
+
+.locality-program {
+  margin-bottom: 100px;
+
+  & .locality-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+  }
+
+  & .locality-content {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+  }
+}
+
+.other-events {
+
+  margin-bottom: 100px;
+  & .other-events-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+
+  & .events {
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & .events-title {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 10px;
+       & .event-title-header {
+         display: flex;
+         flex-direction: column;
+
+         & .event-category {
+           font-size: 18px;
+           font-style: italic;
+         }
+
+         & .event-title {
+           font-size: 18px;
+           font-weight: bold;
+         }
+
+         & .event-img {
+           & .src-event-img {
+             width: 300px;
+             height: 300px;
+             margin: 15px 15px 15px 0px;
+           }
+         }
+       }
+
+      @include tablet() {
+        flex-direction: column;
+      }
+
+      @include phone() {
+        flex-direction: column;
+      }
+    }
+
+    & .events-images {
+      display: flex;
+      justify-content: space-between;
+
+      & .event-img > .src-event-img {
+        width: 300px;
+        height: 251px;
+      }
+    }
+    & .event{
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+
+      & .event-category {
+        font-size: 20px;
+        font-style: italic;
+        line-height: 27px;
+      }
+
+      & .event-title {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 40px;
+      }
+
+      & .event-img {
+        & .src-event-img {
+          width: 300px;
+          height: 251px;
+        }
+      }
+    }
+  }
+}
+
+.a-link {
+  text-decoration: none;
+  color: white;
+
+  & .event-title {
+    font-size: 10px !important;
+  }
+}
+
+.program-item-title {
+  font-style: italic;
+  max-width: 660px;
+}

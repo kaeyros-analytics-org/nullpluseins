@@ -1,0 +1,14 @@
+@import "src/styles";
+
+a {
+  color: white;
+}
+
+.datenschutz {
+  max-width: 660px;
+  line-height: 2;
+  @include phone() {
+    font-size: 15px;
+    font-weight: normal;
+  }
+}

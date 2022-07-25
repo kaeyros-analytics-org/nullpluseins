@@ -1,0 +1,68 @@
+.page-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.page-content {
+  width: 700px;
+  & .title{
+    font-style: oblique;
+    margin-top: 15px;
+  }
+  & .date{
+
+  }
+}
+
+.paragraph {
+  & .paragraph-title {
+    font-weight: 700;
+    font-size: 22px;
+  }
+}
+
+
+.form-field {
+  display: block;
+  margin-top: 32px;
+
+  & label {
+    display: block;
+  }
+
+  & input, & textarea {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-family: inherit;
+    padding-left: 8px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & input {
+    height: 52px;
+  }
+}
+.form-button {
+  border: none;
+  background-color: #FFF;
+  color: #000;
+  font-family: inherit;
+  padding: 12px 32px;
+  font-size: 16px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+
+

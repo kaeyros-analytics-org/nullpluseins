@@ -1,0 +1,15 @@
+<a [routerLink]="link" class="link-category">
+<div class="category">
+  <img
+    [src]="src"
+    alt="images"
+    class="category-image"
+  >
+  <div class="category-city">{{city}}
+    <div class="category-quarter" >{{quarter}}</div>
+    <span style="font-style:normal ">
+         <div class="category-description" [innerHTML]="description">{{description}}</div>
+    </span>
+  </div>
+</div>
+</a>

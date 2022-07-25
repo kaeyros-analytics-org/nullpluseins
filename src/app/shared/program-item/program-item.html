@@ -1,0 +1,36 @@
+<a [routerLink]="link">
+  <div class="program-item-layout">
+
+    <div class="program-item-date program-item-date-sm">
+      {{stringDate}} &#160; {{date | date : 'HH:mm' }}
+    </div>
+
+    <div class="program-item-date">
+      <div class="program-item-date-day">
+        {{stringDate}}
+      </div>
+
+      <div class="program-item-date-hour">
+        {{date | date : 'HH:mm' }}
+      </div>
+    </div>
+
+
+    <div class="program-item-image">
+      <img [src]="imgSrc" alt="Program line item"/>
+    </div>
+
+
+    <div class="program-item-content">
+
+      <div class="program-item-date program-item-date-md">
+        <div class="program-item-date-day">
+          {{stringDate}} &#160; {{date | date : 'HH:mm' }}
+        </div>
+      </div>
+
+      <ng-content></ng-content>
+    </div>
+
+  </div>
+</a>
